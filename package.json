@@ -1,18 +1,26 @@
 {
   "name": "TypeScript-RestAPI",
   "version": "1.0.0",
-  "description": "",
+  "description": "Test Project To Learn Restful APIs with TS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp scripts"
+    "build": "gulp scripts",
+    "start" : "node dist/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Zaymon Foulds-Cook",
   "license": "ISC",
   "devDependencies": {
+    "@types/debug": "0.0.30",
+    "@types/express": "^4.11.0",
+    "@types/node": "^8.5.2",
     "gulp": "^3.9.1",
     "gulp-typescript": "^3.2.3",
     "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "debug": "^3.1.0",
+    "express": "^4.16.2"
   }
 }
