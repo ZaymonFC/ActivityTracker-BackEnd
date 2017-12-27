@@ -8,17 +8,17 @@ chai.use(chaiHttp)
 const expect = chai.expect
 
 describe('baseRoute', () => {
-  it('should be json', () => {
+  it('should be JSON,', () => {
     return chai.request(app).get('/')
       .then((res) => {
         expect(res.type).to.eql('application/json')
       })
   })
 
-  it('should have a message prop', () => {
+  it('should have a message prop,', () => {
     return chai.request(app).get('/')
       .then((res) => {
-        expect(res.body.message).to.eql('Hello World')
+        expect(res.body.message).to.eql('Hello World!')
       })
   })
 

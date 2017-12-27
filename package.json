@@ -4,9 +4,10 @@
   "description": "Test Project To Learn Restful APIs with TS",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r ts-node/register 'test/**/*.test.ts'",
+    "test": "mocha -r ts-node/register test/**/*.test.ts --exit" ,
     "build": "gulp scripts",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "watch": "gulp watch"
   },
   "keywords": [],
   "author": "Zaymon Foulds-Cook",

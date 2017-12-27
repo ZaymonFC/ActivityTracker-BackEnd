@@ -14,7 +14,7 @@ const normalizePort = (val: number | string): number | string | boolean => {
   } else if (result >= 0) {
     return result
   } else {
-    return false
+    return true
   }
 }
 
