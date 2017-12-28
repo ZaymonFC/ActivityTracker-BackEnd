@@ -15,7 +15,9 @@
         "member-access": false,
         "no-consecutive-blank-lines": false,
         "no-console": false,
-        "comment-format": [true, "check-space", "check-uppercase"]
+        "comment-format": [true, "check-space", "check-uppercase"],
+        "arrow-parens": false,
+        "no-var-requires": false
     },
     "rulesDirectory": []
 }

@@ -3,6 +3,8 @@ import * as express from 'express'
 import * as logger from 'morgan'
 import * as path from 'path'
 
+import HeroRouter from './routes/HeroRouter'
+
 class App {
   // Store a reference the the express instance
   public express: express.Application
@@ -30,6 +32,7 @@ class App {
       })
     })
     this.express.use('/', router)
+    this.express.use('/api/v1/heroes', HeroRouter)
   }
 }
 
